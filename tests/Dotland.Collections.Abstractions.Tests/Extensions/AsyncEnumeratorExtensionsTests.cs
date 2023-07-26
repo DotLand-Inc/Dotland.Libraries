@@ -1,6 +1,5 @@
 ﻿using Dotland.Collections.Abstractions.Extensions;
 using FluentAssertions;
-using System.Drawing;
 
 namespace Dotland.Collections.Abstractions.Tests.Extensions;
 
