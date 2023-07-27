@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DBDA439-1BD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{20EEB1BF-2C66-4A96-9399-17612C874DAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotland.Collections.Abstractions", "src\Dotland.Collections.Abstractions\Dotland.Collections.Abstractions.csproj", "{74A7F451-064F-4AB6-AD91-AE14654493F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Collections.Abstractions", "src\Dotland.Collections.Abstractions\Dotland.Collections.Abstractions.csproj", "{74A7F451-064F-4AB6-AD91-AE14654493F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotland.Collections.Abstractions.Tests", "tests\Dotland.Collections.Abstractions.Tests\Dotland.Collections.Abstractions.Tests.csproj", "{45E78AFD-7664-4D55-8060-F4C66E4CF88C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Collections.Abstractions.Tests", "tests\Dotland.Collections.Abstractions.Tests\Dotland.Collections.Abstractions.Tests.csproj", "{45E78AFD-7664-4D55-8060-F4C66E4CF88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotland.Http.Abstractions", "src\Dotland.Http.Abstractions\Dotland.Http.Abstractions.csproj", "{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74A7F451-064F-4AB6-AD91-AE14654493F6} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
 		{45E78AFD-7664-4D55-8060-F4C66E4CF88C} = {20EEB1BF-2C66-4A96-9399-17612C874DAD}
+		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33EA1BC9-9101-4BE8-B845-76CADD46ED34}
