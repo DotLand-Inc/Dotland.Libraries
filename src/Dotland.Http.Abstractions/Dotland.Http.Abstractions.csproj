@@ -1,9 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
+	<!-- Package specification -->
+	<PropertyGroup>
+		<PackageId>Dotland.Http.Abstractions</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Hamza SAII</Authors>
+		<Company>DOTLAND</Company>
+		<Product>Dotland.Http.Abstractions</Product>
+		<Copyright>DOTLAND 2023</Copyright>
+	</PropertyGroup>
 </Project>
