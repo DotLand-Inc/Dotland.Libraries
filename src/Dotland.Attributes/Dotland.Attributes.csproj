@@ -8,8 +8,7 @@
 
 	<!-- Package specification -->
 	<PropertyGroup>
-		<PackageId>Dotland.Http.Abstractions</PackageId>
-		<Version>1.0.2</Version>
+		<PackageId>Dotland.Attributes</PackageId>
 		<Authors>Hamza SAII</Authors>
 		<Company>DOTLAND</Company>
 		<Product>Dotland.Http.Abstractions</Product>
@@ -17,14 +16,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Dotland.Attributes\Dotland.Attributes.csproj" />
+	  <None Update="Dotland.Attributes.nuspec">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 </Project>
