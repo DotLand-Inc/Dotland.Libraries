@@ -18,7 +18,10 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Dotland.Attributes" Version="1.0.0" />
-	  <PackageReference Include="Dotland.Http.Abstractions" Version="1.0.2" />
 	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Dotland.Extensions.Abstractions\Dotland.Extensions.Abstractions.csproj" />
 	</ItemGroup>
 </Project>
