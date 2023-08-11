@@ -1,23 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<TargetFrameworks>net7.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-	</PropertyGroup>
-
-	<!-- Package specification -->
-	<PropertyGroup>
-		<PackageId>Dotland.Attributes</PackageId>
-		<Authors>Hamza SAII</Authors>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Title>Dotland.Attributes</Title>
 		<Company>DOTLAND</Company>
-		<Product>Dotland.Http.Abstractions</Product>
+		<Description>This package contains all shared attributes used by DOTLAND projects</Description>
 		<Copyright>DOTLAND 2023</Copyright>
+		<PackageProjectUrl>https://github.com/DotLand-Inc/Dotland.Libraries</PackageProjectUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/DotLand-Inc/Dotland.Libraries</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>DOTLAND;Attributes;Common</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Update="Dotland.Attributes.nuspec">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  <None Include="..\..\docs\Dotland.Attributes\Readme.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\resources\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
 	  </None>
 	</ItemGroup>
 </Project>

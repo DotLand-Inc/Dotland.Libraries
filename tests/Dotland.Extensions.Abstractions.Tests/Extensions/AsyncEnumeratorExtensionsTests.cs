@@ -1,7 +1,7 @@
-﻿using Dotland.Collections.Abstractions.Extensions;
+﻿using Dotland.Extensions.Collections.Abstractions;
 using FluentAssertions;
 
-namespace Dotland.Collections.Abstractions.Tests.Extensions;
+namespace Dotland.Extensions.Abstractions.Tests.Extensions;
 
 public class AsyncEnumeratorExtensionsTests
 {

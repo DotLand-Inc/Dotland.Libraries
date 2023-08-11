@@ -7,10 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DBDA439-1BD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{20EEB1BF-2C66-4A96-9399-17612C874DAD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Collections.Abstractions", "src\Dotland.Collections.Abstractions\Dotland.Collections.Abstractions.csproj", "{74A7F451-064F-4AB6-AD91-AE14654493F6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Collections.Abstractions.Tests", "tests\Dotland.Collections.Abstractions.Tests\Dotland.Collections.Abstractions.Tests.csproj", "{45E78AFD-7664-4D55-8060-F4C66E4CF88C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Http.Abstractions", "src\Dotland.Http.Abstractions\Dotland.Http.Abstractions.csproj", "{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Http", "src\Dotland.Http\Dotland.Http.csproj", "{1FAFFE0E-5B92-4C85-9B2A-03A29B6FCBC0}"
@@ -19,17 +15,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Attributes", "src\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotland.Extensions.Abstractions", "src\Dotland.Extensions.Abstractions\Dotland.Extensions.Abstractions.csproj", "{785143A9-727B-4535-BE32-38126F28F818}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D56DDC00-9082-45BB-A389-04C4120DED9E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Extensions.Abstractions", "Dotland.Extensions.Abstractions", "{AB401833-7AEC-4806-94FB-A4E3E01ADD0F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Attributes", "Dotland.Attributes", "{8FE17C12-3267-4FB0-A3B1-D801687D0F97}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Http", "Dotland.Http", "{553A9CEB-5121-42EF-8276-63100D1EA262}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Http.Abstractions", "Dotland.Http.Abstractions", "{3D55BAE1-C51C-4D0A-8CAF-1A925222AEB8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotland.Attributes.Tests", "tests\Dotland.Attributes.Tests\Dotland.Attributes.Tests.csproj", "{642D2EB8-6143-4EE2-A1F3-4657A8D921ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotland.Extensions.Abstractions.Tests", "tests\Dotland.Extensions.Abstractions.Tests\Dotland.Extensions.Abstractions.Tests.csproj", "{5A9F5D31-770E-4E0F-B1F7-06E885B16E67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{CCA4873F-2502-4C99-B637-36BC7B7C80CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Attributes", "Dotland.Attributes", "{D43794DD-6487-424F-B1DE-747A971C30ED}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Dotland.Attributes\Readme.md = docs\Dotland.Attributes\Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dotland.Extensions.Abstractions", "Dotland.Extensions.Abstractions", "{96129F19-56AA-431B-8682-FFD361C16127}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Dotland.Extensions.Abstractions\Readme.md = docs\Dotland.Extensions.Abstractions\Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{035AB6A3-269E-45FC-8866-5F21604EAE0F}"
+	ProjectSection(SolutionItems) = preProject
+		resources\logo.png = resources\logo.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +42,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74A7F451-064F-4AB6-AD91-AE14654493F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74A7F451-064F-4AB6-AD91-AE14654493F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74A7F451-064F-4AB6-AD91-AE14654493F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74A7F451-064F-4AB6-AD91-AE14654493F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45E78AFD-7664-4D55-8060-F4C66E4CF88C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,22 +62,23 @@ Global
 		{642D2EB8-6143-4EE2-A1F3-4657A8D921ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{642D2EB8-6143-4EE2-A1F3-4657A8D921ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{642D2EB8-6143-4EE2-A1F3-4657A8D921ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9F5D31-770E-4E0F-B1F7-06E885B16E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9F5D31-770E-4E0F-B1F7-06E885B16E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9F5D31-770E-4E0F-B1F7-06E885B16E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9F5D31-770E-4E0F-B1F7-06E885B16E67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{74A7F451-064F-4AB6-AD91-AE14654493F6} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
-		{45E78AFD-7664-4D55-8060-F4C66E4CF88C} = {20EEB1BF-2C66-4A96-9399-17612C874DAD}
 		{092935FF-CF76-46E9-8F9B-42AC2CA95C3C} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
 		{1FAFFE0E-5B92-4C85-9B2A-03A29B6FCBC0} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
 		{2EC0C3C2-063D-463C-AA01-4522031DF1A2} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
 		{785143A9-727B-4535-BE32-38126F28F818} = {2DBDA439-1BD7-48A2-A066-5EA0418F19B8}
-		{AB401833-7AEC-4806-94FB-A4E3E01ADD0F} = {D56DDC00-9082-45BB-A389-04C4120DED9E}
-		{8FE17C12-3267-4FB0-A3B1-D801687D0F97} = {D56DDC00-9082-45BB-A389-04C4120DED9E}
-		{553A9CEB-5121-42EF-8276-63100D1EA262} = {D56DDC00-9082-45BB-A389-04C4120DED9E}
-		{3D55BAE1-C51C-4D0A-8CAF-1A925222AEB8} = {D56DDC00-9082-45BB-A389-04C4120DED9E}
 		{642D2EB8-6143-4EE2-A1F3-4657A8D921ED} = {20EEB1BF-2C66-4A96-9399-17612C874DAD}
+		{5A9F5D31-770E-4E0F-B1F7-06E885B16E67} = {20EEB1BF-2C66-4A96-9399-17612C874DAD}
+		{D43794DD-6487-424F-B1DE-747A971C30ED} = {CCA4873F-2502-4C99-B637-36BC7B7C80CA}
+		{96129F19-56AA-431B-8682-FFD361C16127} = {CCA4873F-2502-4C99-B637-36BC7B7C80CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33EA1BC9-9101-4BE8-B845-76CADD46ED34}
