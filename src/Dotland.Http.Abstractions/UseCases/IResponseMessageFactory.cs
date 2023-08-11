@@ -14,4 +14,5 @@ public interface IResponseMessageFactory<T> : IResponseMessageFactory
     where T : class, new()
 {
     Response<T> Success(T messages);
+    Response<T> Success(T data, List<Message> messages);
 }
