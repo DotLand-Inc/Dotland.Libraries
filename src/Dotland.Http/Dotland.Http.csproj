@@ -17,15 +17,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="README.md" Pack="true" PackagePath="\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	  <PackageReference Include="Dotland.Attributes" Version="1.0.0" />
+	  <PackageReference Include="Dotland.Http.Abstractions" Version="1.0.2" />
 	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Dotland.Http.Abstractions\Dotland.Http.Abstractions.csproj" />
 	</ItemGroup>
 </Project>
