@@ -2,6 +2,7 @@
 using Dotland.Http.Abstractions.Exceptions;
 using Dotland.Http.Abstractions.Extensions;
 using Dotland.Http.Abstractions.UseCases;
+
 using Microsoft.AspNetCore.Http;
 
 namespace Dotland.Http.Middleware;

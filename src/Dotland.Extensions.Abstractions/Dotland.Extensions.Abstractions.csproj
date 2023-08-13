@@ -4,6 +4,35 @@
 		<TargetFrameworks>net7.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<Title>Dotland.Extensions.Abstractions</Title>
+		<Version>1.0.3</Version>
+		<Company>DOTLAND</Company>
+		<Description>Contains common DOTLAND extensions and tools</Description>
+		<Copyright>DOTLAND 2023</Copyright>
+		<PackageProjectUrl>https://github.com/DotLand-Inc/Dotland.Libraries</PackageProjectUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/DotLand-Inc/Dotland.Libraries</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>DOTLAND;extension</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<IncludeSymbols>True</IncludeSymbols>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\docs\Dotland.Extensions.Abstractions\Readme.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\resources\logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>
