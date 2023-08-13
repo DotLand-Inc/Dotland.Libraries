@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -32,12 +32,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Dotland.Attributes\Dotland.Attributes.csproj" />
-	  <ProjectReference Include="..\Dotland.Extensions.Abstractions\Dotland.Extensions.Abstractions.csproj" />
-	  <ProjectReference Include="..\Dotland.Http.Abstractions\Dotland.Http.Abstractions.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 
@@ -50,5 +44,11 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Dotland.Attributes\Dotland.Attributes.csproj" />
+	  <ProjectReference Include="..\Dotland.Extensions.Abstractions\Dotland.Extensions.Abstractions.csproj" />
+	  <ProjectReference Include="..\Dotland.Http.Abstractions\Dotland.Http.Abstractions.csproj" />
 	</ItemGroup>
 </Project>
