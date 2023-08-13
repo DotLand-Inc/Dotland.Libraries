@@ -9,22 +9,40 @@
 	<!-- Package specification -->
 	<PropertyGroup>
 		<PackageId>Dotland.Http.Abstractions</PackageId>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<Authors>Hamza SAII</Authors>
 		<Company>DOTLAND</Company>
 		<Product>Dotland.Http.Abstractions</Product>
 		<Copyright>DOTLAND 2023</Copyright>
+		<Title>Dotland.Http.Abstractions</Title>
+		<PackageProjectUrl>https://github.com/DotLand-Inc/Dotland.Libraries</PackageProjectUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/DotLand-Inc/Dotland.Libraries</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>DOTLAND</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<IncludeSymbols>True</IncludeSymbols>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<None Include="..\..\docs\Dotland.Http.Abstractions\Readme.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\resources\logo.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	  <ProjectReference Include="..\Dotland.Attributes\Dotland.Attributes.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Dotland.Attributes\Dotland.Attributes.csproj" />
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>
 </Project>

@@ -53,13 +53,13 @@ public class ResponseMessageFactory : IResponseMessageFactory
 public class ResponseMessageFactory<T> : ResponseMessageFactory, IResponseMessageFactory<T>
     where T : class, new()
 {
-    public Response<T> Success(T data) => new()
+    public Response<T> Success(T messages) => new()
     {
         Meta = new Meta()
         {
             Status = MetaStatusType.Succeeded,
         },
-        Data = data,
+        Data = messages,
     };
 
     public Response<T> Success(T data, List<Message> messages) => new()
