@@ -62,6 +62,24 @@ public class ResponseMessageFactory<T> : ResponseMessageFactory, IResponseMessag
         Data = messages,
     };
 
+    public Response<T[]> Success(IEnumerable<T> messages) => new()
+    {
+        Meta = new Meta()
+        {
+            Status = MetaStatusType.Succeeded,
+        },
+        Data = messages.ToArray(),
+    };
+
+    public Response<T[]> Success(params T[] messages) => new()
+    {
+        Meta = new Meta()
+        {
+            Status = MetaStatusType.Succeeded,
+        },
+        Data = messages,
+    };
+
     public Response<T> Success(T data, List<Message> messages) => new()
     {
         Meta = new Meta()
