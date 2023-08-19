@@ -9,7 +9,7 @@
 	<!-- Package specification -->
 	<PropertyGroup>
 		<PackageId>Dotland.Http</PackageId>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
 		<Authors>Hamza SAII</Authors>
 		<Company>DOTLAND</Company>
 		<Product>Dotland.Http</Product>
