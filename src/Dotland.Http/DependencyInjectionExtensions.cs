@@ -1,6 +1,8 @@
 ﻿using Dotland.Http.Abstractions.UseCases;
 using Dotland.Http.Middleware;
+using Dotland.Http.Services;
 using Dotland.Http.UseCases;
+
 using Microsoft.AspNetCore.Builder;
 
 // ReSharper disable once CheckNamespace
@@ -12,7 +14,8 @@ public static class DependencyInjectionExtensions
     {
         return service
             .AddScoped<IResponseMessageFactory, ResponseMessageFactory>()
-            .AddScoped(typeof(IResponseMessageFactory<>), typeof(ResponseMessageFactory<>));
+            .AddScoped(typeof(IResponseMessageFactory<>), typeof(ResponseMessageFactory<>))
+            .AddScoped<IExceptionHandler, ExceptionHandlerService>();
     }
 
     public static IApplicationBuilder UseDotlandHttp(this IApplicationBuilder applicationBuilder)
@@ -20,6 +23,5 @@ public static class DependencyInjectionExtensions
         return applicationBuilder
             .UseMiddleware<ExceptionProcessorMiddleware>()
             .UseMiddleware<CoreExceptionProcessorMiddleware>();
-
     }
 }
